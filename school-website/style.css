@@ -3,8 +3,8 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    background: rgb(115,230,0);
+body{
+    background:rgb(115,230,0);
 }
 .header{
     min-height:100vh;
@@ -66,26 +66,26 @@ nav img{
     font-size:14px;
     color:white;
 }
-.hero-btn {
-    color: white;
-    display: inline-block;
+.hero-btn{
+    color:white;
+    display:inline-block;
     text-decoration: none;
     border: 1px solid white;
     background: transparent;
-    font-size: 20px;
-    position: relative;
-    padding: 12px 34px;
-    cursor: pointer;
+    font-size:20px;
+    position:relative;
+    padding:12px 34px;
+    cursor:pointer;
     transition: 0.5s;
     margin-top: 20px;
 }
-    .hero-btn:hover {
-        color: white;
-        border: 1px solid rgb(0, 255, 98);
-        background-color: rgb(0, 255, 98);
-        transition: 1s;
-        margin-top: 30px;
-    }
+.hero-btn:hover{
+    color:white;
+    border:1px solid rgb(0, 255, 98);
+    background-color: rgb(0, 255, 98);
+    transition: 1s;
+    margin-top: 30px;
+}
 nav .fa{
     display:none;
 }
@@ -168,7 +168,11 @@ p{
     box-sizing: border-box;
     transition: 0.5s;
 }
-
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(21, 151, 21, 0.9);
 }
@@ -262,7 +266,7 @@ div input, div textarea {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-.ContactButton{
+div button{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -273,12 +277,6 @@ div input, div textarea {
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
-}
-textarea {
-    resize: none;
- }
-a {
-    color: rgb(102,255,127);
 }
 .ContactButton {
     width: 200px;
@@ -295,7 +293,6 @@ a {
     overflow: hidden;
     transform: translate(3px);
 }
-
 .spanButton {
     background: #009688;
     height: 100%;
@@ -314,33 +311,6 @@ a {
 .ContactButton:hover {
     border-color:#38363D;
 }
-.contentForButton {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #fff;
-
+textarea {
+    resize: none;
 }
-
-.bub {
-    color: white;
-    display: absolute;
-    text-decoration: none;
-    border: 1px solid white;
-    background: transparent;
-    font-size: 20px;
-    position: relative;
-    padding: 12px 34px;
-    cursor: pointer;
-    transition: 0.5s;
-    transform:translate(12,21);
-}
-
-    .bub:hover {
-        color: white;
-        border: 1px solid rgb(0, 255, 98);
-        background-color: rgb(0, 255, 98);
-        transition: 1s;
-       
-     }

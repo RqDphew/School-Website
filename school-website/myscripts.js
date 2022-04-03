@@ -13,28 +13,28 @@ var path = window.location.pathname;
 var page = path.split("/").pop();
 switch(page){
     case"index.html":
-        document.getElementById("Home").style.backgroundColor ="rgb(102,255,127)";
-        document.getElementById("Home").style.borderRadius="3px";
-        document.getElementById("Home").style.border = "1px gray";
-        document.getElementById("Home").style.color = "black";
+        document.getElementById("Home").style.backgroundColor="rgb(102, 255, 127, 0.7)";
+        document.getElementById("Home").style.borderRadius="5px";
+        document.getElementById("Home").style.border="1px gray";
+        document.getElementById("Home").style.color="black";
         break;
     case"Struki.html":
-        document.getElementById("Courses").style.backgroundColor ="rgb(102,255,127)";
-        document.getElementById("Courses").style.borderRadius="3px";
-        document.getElementById("Courses").style.border = "1px gray";
-        document.getElementById("Courses").style.color = "black";
+        document.getElementById("Courses").style.backgroundColor="rgb(102, 255, 127, 0.7)";
+        document.getElementById("Courses").style.borderRadius="5px";
+        document.getElementById("Courses").style.border="1px gray";
+        document.getElementById("Courses").style.color="black";
         break;
     case"Info.html":
-        document.getElementById("About").style.backgroundColor ="rgb(102,255,127)";
-        document.getElementById("About").style.borderRadius="3px";
-        document.getElementById("About").style.border = "1px gray";
-        document.getElementById("About").style.color = "black";
+        document.getElementById("About").style.backgroundColor="rgb(102, 255, 127, 0.7)";
+        document.getElementById("About").style.borderRadius="5px";
+        document.getElementById("About").style.border="1px gray";
+        document.getElementById("About").style.color="black";
         break;
     case"Contact.html":
-        document.getElementById("Contact").style.backgroundColor ="rgb(102,255,127)";
-        document.getElementById("Contact").style.borderRadius="3px";
-        document.getElementById("Contact").style.border = "1px gray";
-        document.getElementById("Contact").style.color = "black";
+        document.getElementById("Contact").style.backgroundColor="rgb(102, 255, 127, 0.7)";
+        document.getElementById("Contact").style.borderRadius="5px";
+        document.getElementById("Contact").style.border="1px gray";
+        document.getElementById("Contact").style.color="black";
         break;
     default:
         break;
@@ -43,7 +43,6 @@ const actualWidth = window.innerWidth ||
                       document.documentElement.clientWidth ||
                       document.body.clientWidth ||
                       document.body.offsetWidth;
-
 if (actualWidth <= 960){
     document.getElementById("contact_us_id").style.width="80%";
     document.getElementById("input1").style.width="73%";
