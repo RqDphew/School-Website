@@ -1,0 +1,23 @@
+.courses{
+    width:80%;
+    margin: auto;
+    text-align:center;
+    padding-top: 100px;
+}
+.course-col{
+    flex-basis:31%;
+    background:rgb(12, 155, 173);
+    border-radius: 10px;
+    margin-bottom:5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(21, 151, 21, 0.9);
+}
