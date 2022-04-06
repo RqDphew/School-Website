@@ -87,6 +87,19 @@ function change_back(element_name){
             document.getElementById(element_name).style.color="white";   
         }
         break;
+    case"about.html":
+    if(element_name == "About"){
+        document.getElementById("About").style.backgroundColor="rgb(0, 183, 76, 1)";
+        document.getElementById("About").style.borderRadius="5px";
+        document.getElementById("About").style.border="1px gray";
+        document.getElementById("About").style.color="black";
+        }
+        else{
+            document.getElementById(element_name).style.backgroundColor="transparent";
+            document.getElementById(element_name).style.borderRadius="5px";
+            document.getElementById(element_name).style.color="white";   
+        }
+        break;
     default:
         break;
     }
@@ -123,6 +136,12 @@ switch(final_page){
         document.getElementById("E-school").style.borderRadius="5px";
         document.getElementById("E-school").style.border="1px gray";
         document.getElementById("E-school").style.color="black";
+        break;
+    case"about.html":
+        document.getElementById("About").style.backgroundColor="rgb(0, 183, 76, 1)";
+        document.getElementById("About").style.borderRadius="5px";
+        document.getElementById("About").style.border="1px gray";
+        document.getElementById("About").style.color="black";
         break;
     default:
         break;
