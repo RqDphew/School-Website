@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            School website
+        </title>
+        <link rel="stylesheet"href="../main/style.css">
+        <link rel="stylesheet"href="index_style.css">
+        <link rel="stylesheet"href ="../mobile/mobile_style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="index.html"><img src="../img/tehnicko_logo.png"></a>
+                <div id = "navLinks" class="nav-links">
+                    <i class="fa fa-chevron-right" aria-hidden="true"onclick="hide_icons()"></i>
+                    <ul>
+                        <li><a id="Home"href="index.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ПОЧЕТНА</a></li>
+                        <li><a id="About"href="../about/about.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ЗА НАС</a></li>
+                        <li><a id="Courses"href="../struki/Struki.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">СТРУКИ</a></li>
+                        <li><a id="E-school"href="../e-uchilishte/e-uchilishte.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">Е-УЧИЛИШТЕ</a></li>
+                        <li><a id="Contact"href="../contact/Contact.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">КОНТАКТ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show_icons()"></i>
+            </nav>
+            <div class="text-box">
+                <h1><b>СОТУ „Ѓорѓи Наумов“</b></h1>
+                <h3><i>Избери паметно, избери стручно!</i></h3>
+            </div> 
+        </section>
+        <section class="enroll">
+            <h1 id="yearDet"></h1>
+            
+            <a href="../Documents/Информации за упис.zip" class="hero-btn" download>Повеќе информации</a>
+        </section>
+        <section class="footer">
+            
+            <a href="../contact/Contact.html"> <button type="button" class="ContactButton"><span class="spanButton"></span> Контакт </button> </a>
+
+            <p>
+                Ул. “Михајло Андоновски” бр. 1, Битола
+                <br>
+                047/609-708
+                <br>
+                sotugnaumov@yahoo.com
+            </p>
+            <i class = "fa fa-facebook" onclick="facebook_button()"></i>
+            <p>Copyright © 2022 СОТУ "Ѓорѓи Наумов". All rights reserved.
+            </p>
+        </section>
+        <script src="../main/myscripts.js"></script>
+        <script src="../main/year_updater.js"></script>
+    </body>
+</html>

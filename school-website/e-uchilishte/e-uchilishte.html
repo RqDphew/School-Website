@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            School website
+        </title>
+        <link rel="stylesheet"href="../main/style.css">
+        <link rel="stylesheet"href="e_uchilishte.css">
+        <link rel="stylesheet"href ="../mobile/mobile_style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class = "header">
+            <nav>
+                <a href="../home/index.html"><img src="../img/tehnicko_logo.png"></a>
+                <div id = "navLinks" class="nav-links">
+                    <i class="fa fa-chevron-right" aria-hidden="true"onclick="hide_icons()"></i>
+                    <ul>
+                        <li><a id="Home"href="../home/index.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ПОЧЕТНА</a></li>
+                        <li><a id="About"href="../about/about.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ЗА НАС</a></li>
+                        <li><a id="Courses"href="../struki/Struki.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">СТРУКИ</a></li>
+                        <li><a id="E-school"href="e-uchilishte.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">Е-УЧИЛИШТЕ</a></li>
+                        <li><a id="Contact"href="../contact/Contact.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">КОНТАКТ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show_icons()"></i>
+            </nav>
+            <section>
+                <div class="container">
+                    <div>
+                      <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                          <h2>Е-училиште</h2>
+                          <p>Новата алатка може да им помага на учениците да учат 24 часови на ден, седум дена во неделата. Ова подразбира содржина достапна на интернет и обезбедување на брз одговор за да им помогне на учениците.
+    
+                            е-Училиште им помага на наставниците да произведат интернет-базирани курсеви и веб-страници, да влезат во содржината на курсот по електронски пат, и да им доделат пристап на своите ученици.
+                            
+                            Оваа технологија обезбедува онлајн квизови, кои го корегираат одговорот доколку е грешен, овозможувајќи подобрување за оние кои им треба помош, а им овозможува предвремен пристап на напредните ученици до претстојните материјали.
+                            
+                            Овозможува соработка на заеднички проекти, или документ истовремено, брзо креирање на анкети, собирање на податоци или управување со слики. Групната работа може да се подобри.
+                            
+                            Исто така може да се објавува и дистрибуира аудио и видео, да се прават онлајн тестови, да се прикажуваат резултатите и друго.
+                            
+                            Во секој случај, оваа технологија нема да ги замени наставниците во скоро време. Поврзувањето на Наставникот со Учениците е она што го прави учењето да биде порелевантно.
+                            
+                            “Ние сé уште се соочуваме со учениците секој ден, но тие можат да пристапат до информациите во секое време, насекаде”.
+                            
+                            “Се чувствувам како да сум во можност да им помогнам на повеќе ученици отколку што некогаш сум можел”</p>
+                            <h3><a href="http://euciliste.gorginaumov.edu.mk">Пристап до е-училиште</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </section>
+        <section class="footer">
+            
+            <a href="../contact/Contact.html"> <button type="button" class="ContactButton"><span class="spanButton"></span> Контакт </button> </a>
+
+            <p>
+                Ул. “Михајло Андоновски” бр. 1, Битола
+                <br>
+                047/609-708
+                <br>
+                sotugnaumov@yahoo.com
+            </p>
+            <i class = "fa fa-facebook" onclick="facebook_button()"></i>
+            <p>Copyright © 2022 СОТУ "Ѓорѓи Наумов". All rights reserved.
+            </p>
+        </section>
+        <script src="../main/myscripts.js"></script>
+        <script src="../main/year_updater.js"></script>
+    </body>
+</html>
