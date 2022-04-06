@@ -15,7 +15,7 @@ function facebook_button(){
 //nav menu backgrounds
 function change_color(element_name){
     document.getElementById(element_name).style.color = "black";
-    document.getElementById(element_name).style.backgroundColor = "rgb(255, 255, 255, 0.7)";
+    document.getElementById(element_name).style.backgroundColor = "rgb(0, 140, 40, 0.9)";
     document.getElementById(element_name).style.borderRadius="5px";
 }
 function change_back(element_name){
@@ -74,6 +74,19 @@ function change_back(element_name){
             document.getElementById(element_name).style.color="white";   
         }
         break;
+    case"e-uchilishte.html":
+    if(element_name == "E-school"){
+        document.getElementById("E-school").style.backgroundColor="rgb(0, 183, 76, 1)";
+        document.getElementById("E-school").style.borderRadius="5px";
+        document.getElementById("E-school").style.border="1px gray";
+        document.getElementById("E-school").style.color="black";
+        }
+        else{
+            document.getElementById(element_name).style.backgroundColor="transparent";
+            document.getElementById(element_name).style.borderRadius="5px";
+            document.getElementById(element_name).style.color="white";   
+        }
+        break;
     default:
         break;
     }
@@ -84,7 +97,7 @@ switch(final_page){
     case"index.html":
         document.getElementById("Home").style.backgroundColor="rgb(0, 183, 76, 1)";
         document.getElementById("Home").style.borderRadius="5px";
-        document.getElementById("Home").style.border="1px gray";
+        document.getElementById("Home").style.border="1px black";
         document.getElementById("Home").style.color="black";
         break;
     case"Struki.html":
@@ -104,6 +117,12 @@ switch(final_page){
         document.getElementById("Contact").style.borderRadius="5px";
         document.getElementById("Contact").style.border="1px gray";
         document.getElementById("Contact").style.color="black";
+        break;
+    case"e-uchilishte.html":
+        document.getElementById("E-school").style.backgroundColor="rgb(0, 183, 76, 1)";
+        document.getElementById("E-school").style.borderRadius="5px";
+        document.getElementById("E-school").style.border="1px gray";
+        document.getElementById("E-school").style.color="black";
         break;
     default:
         break;

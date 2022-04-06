@@ -10,10 +10,10 @@
 .text-box h1{
     font-size: 60px;
 }
-.text-box p1{
+.text-box h3{
     margin:10px 0 40px;
-    font-size:14px;
-    color:white;
+    font-size:28px;
+    color:orange;
 }
 .enroll{
     margin: 100px auto;
