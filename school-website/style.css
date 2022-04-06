@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background:rgb(39, 111, 129, 0.5);
+    background:#FFFF4D;
 }
 .header{
     min-height:100vh;
@@ -162,7 +162,7 @@ html {
     }
 
     html::-webkit-scrollbar-thumb {
-        background-color: skyblue;
+        background-color: rgb(165,206,255,0.5);
     }
 
     html::-webkit-scrollbar-thumb:hover {
