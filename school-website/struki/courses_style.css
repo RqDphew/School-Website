@@ -61,7 +61,7 @@ body{
     transform: translateX(-50%);
 }
 .content{
-    display: flex;
+    display: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;

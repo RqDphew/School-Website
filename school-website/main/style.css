@@ -6,7 +6,7 @@
 body{
     background:#FFFF4D;
 }
-.header{
+header{
     min-height:100vh;
     width:100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/gorgi_naumov.png);
@@ -15,6 +15,7 @@ body{
     position: relative;
 }
 .hero-btn{
+    border-radius: 20px;
     color:white;
     display:inline-block;
     text-decoration: none;
@@ -32,7 +33,7 @@ body{
     border:1px solid rgb(0, 255, 98);
     background-color: rgb(0, 255, 98);
     transition: 1s;
-    margin-top: 30px;
+    transform: translate(-50%,-40%);
 }
 nav .fa{
     display:none;
@@ -60,12 +61,15 @@ nav img{
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    padding: 7px;
+    border-radius: 2px;
 }
 .nav-links ul li::after{
+    margin-top: 7px;
     content: '';
     width:0%;
     height: 2px;
-    background: #0ad346;
+    background: #e4fc0f;
     display: block;
     margin: "auto";
     transition:0.5s;
@@ -89,13 +93,13 @@ p{
     display:flex;
     justify-content:space-evenly;
 }
-.footer{
+footer{
     background-color: rgb(56, 54, 61);
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer h3{
+footer h3{
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -105,13 +109,13 @@ p{
     background-color: rgb(16, 102, 102);
     width: 20%;
 }
-.footer p{
+footer p{
     color:rgb(163, 163, 163);
 }
 .fa:hover{
     cursor:pointer;
 }
-.footer .fa{
+footer .fa{
     color:#1d7eec;
 }
 .ContactButton {
@@ -157,23 +161,60 @@ html {
     scrollbar-color: lime;
 }
 
-    html::-webkit-scrollbar {
-        width: 15px;
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(165,206,255,0.5);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+        background-color: lightskyblue;
     }
 
-    html::-webkit-scrollbar-thumb {
-        background-color: rgb(165,206,255,0.5);
-    }
 
-    html::-webkit-scrollbar-thumb:hover {
-            background-color: lightskyblue;
-     }
+html::-webkit-scrollbar-track {
+    background-color: #333;
+}
 
+html::-webkit-scrollbar-track:hover {
+    background-color: #555;
+}
 
-    html::-webkit-scrollbar-track {
-      background-color: #333;
-    }
-
-    html::-webkit-scrollbar-track:hover {
-      background-color: #555;
-    }
+    #button {
+        display: inline-block;
+        background-color: #FF9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s, 
+          opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: rgb(167, 178, 17);
+      }
+      #button:active {
+        background-color: rgb(197, 140, 6);
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }

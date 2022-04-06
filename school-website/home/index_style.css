@@ -26,3 +26,13 @@
     text-align: center;
     padding: 100px 0;
 }
+.my-text {
+    animation: pop 0.8s ease-in-out;
+    color:#fad409;
+}
+
+@keyframes pop {
+    50% {
+        transform: scale(1.5);
+    }
+}

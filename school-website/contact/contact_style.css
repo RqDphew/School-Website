@@ -4,13 +4,14 @@
     padding: 80px 0;
 }
 .location iframe{
+    border-radius: 20px;
     width: 100%;
 }
 .contact_us{
     width:20%;
     display: block;
     background-color: rgb(16, 102, 122,0.8);
-    border-radius: 5px;
+    border-radius: 15px;
     border:2px solid black;
     margin: auto;
 }
@@ -65,4 +66,16 @@
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+#input1{
+    border-radius: 20px;
+}
+#input2{
+    border-radius: 20px;
+}
+#input3{
+    border-radius: 20px;
+}
+#input4{
+    border-radius: 20px;
 }
