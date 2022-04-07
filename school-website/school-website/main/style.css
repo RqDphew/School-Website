@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:#FFFF4D;
+}
+header{
+    min-height:100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/gorgi_naumov.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.hero-btn{
+    border-radius: 20px;
+    color:white;
+    display:inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    background: transparent;
+    font-size:20px;
+    position:relative;
+    padding:12px 34px;
+    cursor:pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+    .hero-btn:hover {
+        color: white;
+        border: 1px solid #009688;
+        background-color: #009688;
+        transition: 1s;
+        transform: translate(0%,20%);
+    }
+nav .fa{
+    display:none;
+}
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 2px;
+}
+.nav-links ul li::after{
+    margin-top: 7px;
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #e4fc0f;
+    display: block;
+    margin: "auto";
+    transition:0.5s;
+}.nav-links ul li:hover::after{
+    width:100%;
+}
+h1{
+    color:white;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #fff;
+    font-size:14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top:5%;
+    display:flex;
+    justify-content:space-evenly;
+}
+footer{
+    background-color: rgb(56, 54, 61);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+footer h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    display: block;
+    border:1px solid black;
+    background-color: rgb(16, 102, 102);
+    width: 20%;
+}
+footer p{
+    color:rgb(163, 163, 163);
+}
+.fa:hover{
+    cursor:pointer;
+}
+footer .fa{
+    color:#1d7eec;
+}
+.ContactButton {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position:center;
+    overflow: hidden;
+    transform: translate(3px);
+}
+.spanButton {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.ContactButton:hover span {
+    width: 100%;
+}
+.ContactButton:hover {
+    border-color:#38363D;
+}
+textarea {
+    resize: none;
+}
+
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: lime;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(165,206,255,0.5);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+        background-color: lightskyblue;
+    }
+
+
+html::-webkit-scrollbar-track {
+    background-color: #333;
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: #555;
+}
+
+    #button {
+        display: inline-block;
+        background-color: #FF9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s, 
+          opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #button:hover {
+        cursor: pointer;
+        background-color: rgb(167, 178, 17);
+      }
+      #button:active {
+        background-color: rgb(197, 140, 6);
+      }
+      #button.show {
+        opacity: 1;
+        visibility: visible;
+      }
