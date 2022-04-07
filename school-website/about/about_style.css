@@ -43,6 +43,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 1s background-color;
 }
 
 .history>button:first-of-type {
