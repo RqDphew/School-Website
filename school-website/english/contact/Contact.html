@@ -12,19 +12,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script>
-            
-        function checkMail(){
-            const isValidEmail = input2.checkValidity();
-            if(isValidEmail == false)
-                return
+            function checkMail(){
+                var final_location = window.location.pathname;
+                var this_page = final_location.split("/").pop();
+                const isValidEmail = input2.checkValidity();
+                let x = document.forms["myForm"]["name"].value;
+                let y = document.forms["myForm"]["subject"].value;
+                let z = document.forms["myForm"]["message"].value;
+                if(isValidEmail == false || x == "" || y == "" || z == "")
+                    return
                 window.alert('Your message was sent successfully!');
-        }
+        }   
         </script>
     </head>
     <body>
         <header>
             <nav>
-                <a href="../home/index.html"><img src="../img/tehnicko_logo.png"></a>
+                <a href="../home/index.html"><img src="../../img/tehnicko_logo.png"></a>
                 <div id = "navLinks" class="nav-links">
                     <i class="fa fa-chevron-right" aria-hidden="true"onclick="hide_icons()"></i>
                     <ul>
@@ -64,7 +68,7 @@
                     </div>
                 </div>
                 <div>
-                    <form action="form-handler.php" method="post">
+                    <form name="myForm"action="form-handler.php" method="post">
                         <input id="input1" name = "name" type="text" placeholder="Enter name:" required><br>
                         <input id="input2" name ="email" type="email" placeholder="Enter e-mail adress:" required><br>
                         <input id="input3" name = "subject" type="text" placeholder="Enter subject:" required><br>
@@ -72,7 +76,7 @@
                         <br>
                         <br>
                         <textarea id="input4"rows="8" name = "message" placeholder="Message"required></textarea><br>
-                        <button type="submit" class="hero-btn" onclick="checkMail();"><a href="">Send</a></button>
+                        <button type="submit" class="hero-btn" onclick="checkMail();">Send</button>
                     </form>
                 </div>
             </section>
@@ -84,10 +88,7 @@
     </header>
     <button id="myBtn" ><a href=""><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
     <footer>
-            
-        <a href="../contact/Contact.html"> <button type="button" class="ContactButton"><span class="spanButton"></span> Contact </button> </a>
-
-        <p>
+            <p>
             "Mihajlo Andonovski" No.1, Bitola
             <br>
             047/609-708

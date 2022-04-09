@@ -165,6 +165,8 @@ function myFunction() {
 function change(lang){
     var path = final_path.substring(0, final_path.lastIndexOf("/"));
     var directoryName = path.substring(path.lastIndexOf("/")+1);
-    location.href = "../../"+lang+"/"+directoryName+"/"+final_page;;    
-
+    if(final_page=="elektro_doc.html" || final_page == "mashinski_doc.html")
+        location.href="../../../../"+lang+"/struki/"+directoryName+"/"+final_page;   
+    else
+        location.href = "../../"+lang+"/"+directoryName+"/"+final_page;
 }

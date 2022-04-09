@@ -82,6 +82,9 @@
     .content p{
     font-size: 12px;
     }
+    #myBtn{
+        left: 85%;
+    }
 }
 @media(max-width: 750px){
     .box{

@@ -6,6 +6,7 @@
             School website
         </title>
         <link rel="stylesheet"href="../../main/style.css">
+        <link rel="stylesheet"href="mashinski_style.css">
         <link rel="stylesheet"href="../courses_style.css">
         <link rel="stylesheet"href ="../../mobile/mobile_style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,7 +16,7 @@
     <body>
         <header>
             <nav>
-                <a href="../../home/index.html"><img src="../../img/tehnicko_logo.png"></a>
+                <a href="../../home/index.html"><img src="../../../img/tehnicko_logo.png"></a>
                 <div id = "navLinks" class="nav-links">
                     <i class="fa fa-chevron-right" aria-hidden="true"onclick="hide_icons()"></i>
                     <ul>
@@ -28,6 +29,34 @@
                 </div>
                 <i class="fa fa-bars" onclick="show_icons()"></i>
             </nav>
+            <center><h1>Машински смерови</h1></center>
+            <br>
+            <hr>
+            <div id="first_block"class="main">
+                <p>Техничар за компјутерско управување</p>
+            </div>
+            <div id='first_info'class="info">
+                <p>hello</p>
+                <p>hello</p>
+            </div>
+            <div id="second_block"class="main">
+                <p>Машински техничар/машинско енергетски техничар</p>
+            </div>
+            <div id='second_info'class="info">
+                <p>Primer1</p>
+            </div>
+            <div id="third_block"class="main">
+                <p>Машински техничар за моторни возила</p>
+            </div>
+            <div id="third_info"class="info">
+                <p>Primer1</p>
+            </div>
+            <div id="fourth_block"class="main">
+                <p>Обработувач на метал/Заварувач</p>
+            </div>
+            <div id="fourth_info"class="info">
+                <p>Primer1</p>
+            </div>
         </header>
         <button id="myBtn" ><a href=""><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
         <footer>
@@ -44,6 +73,11 @@
             <i class = "fa fa-facebook"onclick="facebook_button()"></i>
             <p>Copyright © 2022 СОТУ "Ѓорѓи Наумов". All rights reserved.
             </p>
+            <row>
+                <img style="cursor:pointer;"onclick="change('macedonian')" src="../../../flags/mk.png">
+                <img style="cursor:pointer;"onclick="change('english')" src="../../../flags/en.png">
+                <img style="cursor:pointer;"onclick="change('german')" src="../../../flags/de.png">
+             </row>
         </footer>
         <script src="../../main/myscripts.js"></script>
     </body>
