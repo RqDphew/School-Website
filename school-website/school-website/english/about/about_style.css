@@ -69,3 +69,9 @@ ol {
 .collapse {
     transform: rotate(90deg);
 }
+
+@media (max-width:768px){
+    .main {
+        width: 80%;
+    }
+}
