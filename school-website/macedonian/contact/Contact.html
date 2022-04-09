@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            School website
+        </title>
+        <link rel="stylesheet"href="../main/style.css">
+        <link rel="stylesheet"href="contact_style.css">
+        <link rel="stylesheet"href ="../mobile/mobile_style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            
+            function checkMail(){
+                var final_location = window.location.pathname;
+                var this_page = final_location.split("/").pop();
+                const isValidEmail = input2.checkValidity();
+                let x = document.forms["myForm"]["name"].value;
+                let y = document.forms["myForm"]["subject"].value;
+                let z = document.forms["myForm"]["message"].value;
+                if(isValidEmail == false || x == "" || y == "" || z == "")
+                    return
+                window.alert('Вашата порака беше успешно испратена!');
+            }
+            </script>
+    </head>
+    <body>
+        <header>
+            <row>
+                <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+                <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+                <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+             </row>
+            <nav>
+                <a href="../home/index.html"><img src="../../img/tehnicko_logo.png"></a>
+                <div id = "navLinks" class="nav-links">
+                    <i class="fa fa-chevron-right" aria-hidden="true"onclick="hide_icons()"></i>
+                    <ul>
+                        <li><a id="Home"href="../home/index.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ПОЧЕТНА</a></li>
+                        <li><a id="About"href="../about/about.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ЗА НАС</a></li>
+                        <li><a id="Courses"href="../struki/Struki.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">СТРУКИ</a></li>
+                        <li><a id="E-school"href="../e-uchilishte/e-uchilishte.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">Е-УЧИЛИШТЕ</a></li>
+                        <li><a id="Contact"href="Contact.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">КОНТАКТ</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show_icons()"></i>
+            </nav>
+            <section id = "contact_us_id"class = "contact_us">
+                <div class="row">
+                    <div class="contact-col">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>ул. “Михајло Андоновски’’ бр. 1</h5>
+                                <p>Битола - Република Северна Македонија </p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>+389 (0)47 609 708</h5>
+                                <p>Понеделник-Петок, 7:15/19:30</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                <h5> sotugnaumov@yahoo.com</h5>
+                                <p>Е-пошта за контакт</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form name="myForm"action="form-handler.php" method="post">
+                        <input id="input1" name = "name" type="text" placeholder="Внеси име:" required><br>
+                        <input id="input2" name ="email" type="email" placeholder="Внеси е-маил адреса:" required><br>
+                        <input id="input3" name = "subject" type="text" placeholder="Внеси предмет:" required><br>
+                        <br>
+                        <br>
+                        <br>
+                        <textarea id="input4"rows="8" name = "message" placeholder="Порака:"required></textarea><br>
+                        <button type="submit" class="hero-btn" onclick="checkMail();"><a href="">Испрати</a></button>
+                    </form>
+                </div>
+            </section>
+            <section class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6019.951452587761!2d21.316148!3d41.025787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa95fc16198fea455!2sTechnical%20High%20School%20Gjorgji%20Naumov!5e0!3m2!1sen!2smk!4v1648942503956!5m2!1sen!2smk"
+                width="600" height="500" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </header>
+    <button id="myBtn" ><a href=""><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
+    <footer>
+        
+        <p>
+            Ул. “Михајло Андоновски” бр. 1, Битола
+            <br>
+            047/609-708
+            <br>
+            sotugnaumov@yahoo.com
+        </p>
+        <i class = "fa fa-facebook" onclick="facebook_button()"></i>
+        <p>Copyright © 2022 СОТУ "Ѓорѓи Наумов". All rights reserved.
+        </p>
+        <row>
+            <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+            <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+            <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+         </row>
+    </footer>
+        <script src="../main/myscripts.js"></script>
+        <script src="../main/contact_script.js"></script>
+    </body>
+</html>

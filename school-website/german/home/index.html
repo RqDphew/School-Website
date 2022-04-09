@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        School website
+    </title>
+    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="../mobile/mobile_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        
+        <row>
+            <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+            <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+            <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+         </row>
+        <nav>
+            <a href="index.html"><img src="../../img/tehnicko_logo.png"></a>
+            <div id="navLinks" class="nav-links">
+                <i class="fa fa-chevron-right" aria-hidden="true" onclick="hide_icons()"></i>
+                <ul>
+                    <li><a id="Upis"href="#upis" >EINSCHREIBUNG</a></li>
+                    <li><a id="Home"href="index.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">HEIMAT</a></li>
+                    <li><a id="About"href="../about/about.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">FÜR UNS</a></li>
+                    <li><a id="Courses"href="../struki/Struki.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">KURSE</a></li>
+                    <li><a id="E-school"href="../e-uchilishte/e-uchilishte.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">E-SCHULE</a></li>
+                    <li><a id="Contact"href="../contact/Contact.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">KONTAKT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="show_icons()"></i>
+        </nav>
+        <div class="text-box">
+            <h1><b>SOTU "Gjorgji Naumov" - Bitola</b></h1>
+            <h3 class="my-text"><i>Wählen Sie weise, wählen Sie professionell!</i></h3>
+        </div>
+    </header>
+
+    <section class="news">
+        <br>
+        <br>
+        <div class="news-col">
+            <img src="../../img/artikl3.jpg">
+            <i class="fa fa-calendar-o" aria-hidden="true">29. 03. 2022</i>
+            <p>Gestern fand in unserer Schule eine Vorlesung zum Thema "Steuern in RSM" statt.
+                 Die Vorlesung richtete sich an Studenten in den letzten Jahren und wurde von Biljana Stojanovska von der Regionaldirektion des Finanzamtes - Bitola gehalten. 
+                 Ziel dieser Veranstaltung ist es, die Absolventinnen und Absolventen mit den steuerlichen Pflichten natürlicher und juristischer Personen in unserem Land vertraut zu machen, 
+                 was dem Lehrplan für das Fach Betriebswirtschaft entspricht.</p>
+            <button>Mehr</button>
+        </div>
+        <div class="news-col">
+            <img src="../../img/artikl2.jpg">
+            <i class="fa fa-calendar-o" aria-hidden="true">28. 03. 2022</i>
+            <p>Am Freitag (25. März) fanden regionale Wettbewerbe an Elektro-, Mechanik- und Verkehrsgymnasien statt.
+                Für unsere Region war der Gastgeber OEMUC „St. Naum Ohridski“ – Ohrid.
+                Am Wettbewerb nahmen drei Schüler unserer Schule teil, die in drei Ausbildungsprofilen der Elektrotechnik antraten:
+
+               Hristijan Nikolovski - Elektrotechniker für Computertechnik und Automatisierung, Platz II, Mentoren: Ilce Acevski, Biljanka Hristovska, Pece Petrov, Marija Kolevska
+               Teo Ilchevski - Elektrotechniker Energie, Platz II, Mentoren: Aco Ilievski, Silvana Kotevska, Vlado Tasevski
+               Darko Talevski - Techniker für Industriemechatronik, Platz II, Mentoren: Ilce Acevski, Stevo Kotevski, Silvana Kotevska
+               Mit dem erzielten Erfolg qualifizierten sich unsere drei Vertreter für den Staatswettbewerb, der am 6. Mai im Gymnasium "Kole Nedelkovski" - Veles stattfinden wird.
+               
+               Wir gratulieren zu ihrem Erfolg und wünschen viel Erfolg beim Landeswettbewerb.</p>
+            <button>Mehr</button>
+        </div>
+        <div class="news-col">
+            <img src="../../img/artikl1.jpg">
+            <i class="fa fa-calendar-o" aria-hidden="true">22. 03. 2022</i>
+            <p>
+                Der Landeswettbewerb Informatik fand am Samstag, 19. März, an drei Orten statt:
+                in der High School "Dobri Daskalov" - Kavadarci, "Semos Education" - Skopje und der Fakultät für Informationswissenschaften und Computertechnik (FINKI) - Skopje.
+                An dem Wettbewerb nahmen Schüler teil, die zuvor bei regionalen Wettbewerben erfolgreich waren.
+                Der Vertreter unserer Schule war der Schüler Hristijan Nikolovski aus dem dritten Jahr unter der Leitung von Professor Marija Kolevska.
+                 In einem sehr starken Wettbewerb erzielte Christian mit dem Gewinn des dritten Preises einen großen Erfolg. Damit bestätigte er einmal mehr, dass die SOTU „Gjorgji Naumov“ eine Talentschmiede im Bereich Programmierung und Informatik ist.
+
+                Gut gemacht für Hristian, gut gemacht für den Mentor! Mögen sich Ihre Belohnungen und Erfolge vervielfachen!</p>
+            <button>Mehr</button>
+        </div>
+    </section>
+
+    <div class="enroll-background">
+        <br>
+    <section class="enroll">
+        <h1 id="yearDet"></h1>
+        <a href="../Documents/Информации за упис.zip"> <button type="button" class="hero-btn"><span class="spanButton"></span> Mehr Informationen</button> </a>
+    </section>
+    </div>
+    <button id="myBtn" ><a href=""><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
+    <footer id="upis">
+            
+        <a href="../contact/Contact.html"> <button type="button" class="ContactButton"><span class="spanButton"></span> Kontakt </button> </a>
+
+        <p>
+            Str. "Mihajlo Andonovski" Nr. 1, Bitola
+            <br>
+            047/609-708
+            <br>
+            sotugnaumov@yahoo.com
+        </p>
+        <i class = "fa fa-facebook"onclick="facebook_button()"></i>
+        <p>Copyright © 2022 SOTU "Gjorgji Naumov". All rights reserved.
+        </p>
+        <row>
+            <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+            <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+            <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+         </row>
+    </footer>
+    <script src="../main/myscripts.js"></script>
+    <script src="../main/year_updater.js"></script>
+</body>
+</html>

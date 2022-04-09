@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            School website
+        </title>
+        <link rel="stylesheet"href="../main/style.css">
+        <link rel="stylesheet"href="e_uchilishte.css">
+        <link rel="stylesheet"href ="../mobile/mobile_style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <row>
+                <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+                <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+                <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+             </row>
+            <nav>
+                <a href="../home/index.html"><img src="../../img/tehnicko_logo.png"></a>
+                <div id = "navLinks" class="nav-links">
+                    <i class="fa fa-chevron-right" aria-hidden="true"onclick="hide_icons()"></i>
+                    <ul>
+                        <li><a id="Home"href="../home/index.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">HOME</a></li>
+                        <li><a id="About"href="../about/about.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">ABOUT</a></li>
+                        <li><a id="Courses"href="../struki/Struki.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">COURSES</a></li>
+                        <li><a id="E-school"href="e-uchilishte.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">E-SCHOOL</a></li>
+                        <li><a id="Contact"href="../contact/Contact.html"onmousedown="change_color(this.id)" onmouseout="change_back(this.id)">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="show_icons()"></i>
+            </nav>
+            <section>
+                <div class="container">
+                    <div>
+                      <div class="box">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="content">
+                          <h2>E-school</h2>
+                          <p>The new tool can help students study 24 hours a day, seven days a week. This includes content available online and providing a quick response to help students. e-School helps teachers create web-based courses and websites, access course content electronically, and grant access to their students. This technology provides online quizzes, which correct the answer if it is wrong, allowing improvement for those who need help, and giving advanced students early access to upcoming materials. Enables collaboration on collaborative projects, or a document at the same time, quickly creating surveys, collecting data or managing images. Group work can be improved. You can also publish and distribute audio and video, perform online tests, display results, and more. In any case, this technology will not replace teachers any time soon. Connecting the Teacher with the Students is what makes learning more relevant.<br> "We still face students every day, but they can access information anytime, anywhere."<br> "I feel like I'm able to help more students than I ever could."</p>
+                            <h3><a href="http://euciliste.gorginaumov.edu.mk">Access to e-school</a></h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </header>
+        <button id="myBtn" ><a href=""><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
+        <footer>
+            
+            <a href="../contact/Contact.html"> <button type="button" class="ContactButton"><span class="spanButton"></span> Contact </button> </a>
+    
+            <p>
+                "Mihajlo Andonovski" No.1, Bitola
+                <br>
+                047/609-708
+                <br>
+                sotugnaumov@yahoo.com
+            </p>
+            <i class = "fa fa-facebook"onclick="facebook_button()"></i>
+            <p>Copyright © 2022 SOTU "Gorgi Naumov". All rights reserved.
+            </p>
+            <row>
+                <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+                <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+                <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+             </row>
+        </footer>
+        <script src="../main/myscripts.js"></script>
+        <script src="../main/year_updater.js"></script>
+    </body>
+</html>

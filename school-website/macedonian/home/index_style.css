@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(16, 102, 122);
+}
+.text-box{
+    width:90%;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+}
+.text-box h3{
+    margin:10px 0 40px;
+    font-size:28px;
+    color:orange;
+}
+.enroll-background{
+    background:#e4fc0f;
+    height: 500px;
+}
+.enroll{
+    margin: 100px auto;
+    width: 70%;
+    height: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../../img/Bitola-Uciliste-Gorgi-Naumov.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 0;
+}
+.my-text {
+    animation: pop 0.95s ease-in-out;
+    color:#fad409;
+}
+
+@keyframes pop {
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.news{
+    background-color: rgb(16, 102, 122);
+}
+.news-col{
+    border:1px solid black;
+    box-shadow: 1px 1px 1px 1px rgba(90, 90, 90, 0.9);
+    transform: translate(50%);
+    width:50%;
+    flex-basis:31%;
+    background:white;
+    border-radius: 5px;
+    margin-bottom:3%;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.news-col i{
+    padding-left:10px;
+}
+.news-col button{
+    padding:3px;
+    color:white;
+    background-color: rgb(55, 153, 175);
+    border:0.3px solid black;
+    border-radius: 2px;
+    margin-left:10px;
+}
+.news-col p{
+    color: black;
+}
+.news-col img{
+    border-radius: 5px;
+    width:100%;
+    height:100%;
+}
