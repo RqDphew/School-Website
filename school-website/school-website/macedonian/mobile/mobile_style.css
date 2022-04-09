@@ -56,9 +56,9 @@
     }
     .box{
         position: relative;
-        top: 400px;
-        width: 90%;
-        height: 78%;
+        top: 300px;
+        width: 60%;
+        height: 75%;
     }
     .box .content{
         position:relative;
@@ -100,8 +100,8 @@
 @media(min-width:950px) and (max-width:1400px){
     .box{
         position: relative;
-        top: 200px;
-        width: 90%;
+        top: 300px;
+        width: 40%;
     }
     .box .content{
         position:relative;
@@ -121,20 +121,6 @@
 }
 @media(min-width:1400px) and (max-width:1750px){
     .box{
-        position: relative;
-        top: 200px;
-        width: 90%;
-    }
-    .box .content{
-        position:relative;
-        top:0px;
-        left:0px;
-        right:15px;
-        bottom:20px;
-        border:1px solid #f0a591;
-        padding:20px;
-        text-align:center;
-        box-shadow: 0 5px 10px rgba(9,0,0,0.5);
-        
+        height: 75%;
     }
 }

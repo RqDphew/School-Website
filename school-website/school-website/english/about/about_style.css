@@ -6,8 +6,7 @@
     border-radius: 10px;
     /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     padding: 20px;
-    margin: auto;
-    width: 60%;
+    margin: 20px;
 }
 
 .main img{
@@ -68,10 +67,4 @@ ol {
 
 .collapse {
     transform: rotate(90deg);
-}
-
-@media (max-width:768px){
-    .main {
-        width: 80%;
-    }
 }
