@@ -97,3 +97,22 @@ body{
     width:49%;
     transform: translate(52%);
 }
+video {
+    margin-top:300px;
+    position: relative;
+}
+
+.first-text {
+    margin-top:-120px;    
+}
+.a-for-next {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.a-for-next:hover {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+    }
+

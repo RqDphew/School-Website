@@ -36,9 +36,14 @@
             <i class="fa fa-bars" onclick="show_icons()"></i>
         </nav>
         <div class="text-box">
-            <h1><b>SOTU "Gorgi Naumov"</b></h1>
+            <h1 class="first-text"><b>SOTU "Gorgi Naumov"</b></h1>
             <h3 class="my-text"><i>Choose wisely, choose professionally!</i></h3>
         </div>
+        <center> <video width="420" height="300" controls>
+            <source src="../../videos/video.mp4" type="video/mp4">
+            
+            Your browser does not support the video tag.
+          </video> </center>
     </header>
 
     <section class="news">
@@ -51,16 +56,16 @@
             <br>
             <hr>
         </div>
-        <div class="news-col">
+        <div class="news-col" id="news-3">
             <img src="../../img/artikl3.jpg">
             <i class="fa fa-calendar-o" aria-hidden="true">29. 03. 2022</i>
             <p>Yesterday in our school was held a lecture on "Taxes in RSM". The lecture was intended for final year students,
                 and was conducted by Biljana Stojanovska from the Regional Directorate of the Public Revenue Office - Bitola.
                 The purpose of this event is to introduce graduates to the tax obligations of individuals and legal entities in our country which is
                 in accordance with the curriculum for the subject Business.</p>
-            <button>More</button>
+                <button><a class="a-for-next" href="#news-4">Next</a></button>  <button><a class="a-for-next" href="#news-2">Previous</a></button>
         </div>
-        <div class="news-col">
+        <div class="news-col" id="news-2" >
             <img src="../../img/artikl2.jpg">
             <i class="fa fa-calendar-o" aria-hidden="true">28. 03. 2022</i>
             <p>Regional competitions at electrical, mechanical and traffic high schools were held on Friday (March 25th).
@@ -73,9 +78,9 @@
                With the achieved success, the three of our representatives qualified for the state competition which will be held on May 6 in the high school "Kole Nedelkovski" - Veles.
                
                We congratulate them on their success and wish them good luck in the state competition.</p>
-            <button>More</button>
+               <button><a class="a-for-next" href="#news-3">Next</a></button>  <button><a class="a-for-next" href="#news-1">Previous</a></button>
         </div>
-        <div class="news-col">
+        <div class="news-col" id="news-1">
             <img src="../../img/artikl1.jpg">
             <i class="fa fa-calendar-o" aria-hidden="true">22. 03. 2022</i>
             <p>The state competition in informatics was held on Saturday, March 19 at three locations:
@@ -85,7 +90,7 @@
                  In a very strong competition, Christian achieved great success by winning the third prize. With that, he once again confirmed that SOTU "Gjorgji Naumov" is a nursery of talents in the field of programming and computer science.
 
                 Well done to Christian, well done to the mentor! May your rewards and successes be multiplied!</p>
-            <button>More</button>
+                <button><a class="a-for-next" href="#news-2">Next</a></button> 
         </div>
     </section>        
 
