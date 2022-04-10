@@ -5,7 +5,7 @@ hr{
     transform: translate(50%);
     width:50%;
     height: 2px;
-}
+} 
 .main {
     position: relative;
     margin: auto;
@@ -38,7 +38,7 @@ hr{
     transition: all 1s linear;
     z-index: 1;
     position:absolute;
-    transform: translateX(31.5%);
+    transform: translate(31.5%,-5%);
     padding: 10px;
     margin: 20px;
     width:60%;
@@ -49,40 +49,76 @@ hr{
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+.info div img{
+    filter: brightness(50%);
+    width:100%;
+    transform: scale(1,0.5);
+    transform-origin: top;
+    border-radius: 10px;
+    top:50px;
+}
+.info div{
+    position: relative;
+    height: 50%;
+}
+.info p{
+    font-size:20px;
+    position:absolute;
+    top: 3%;
+    left: 3%;
+}
 #first_block:hover + #first_info{
-    background: url(../../../img/chip_image.jpg);
     display: block;
     opacity: 1;
-    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
 #second_block:hover + #second_info{
-    background: url(../../../img/telecoms.jpeg);
     display: block;
     opacity: 1;
-    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
 #third_block:hover + #third_info{
-    background: url(../../../img/energetics.jpg);
     display: block;
     opacity: 1;
-    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
 #fourth_block:hover + #fourth_info{
-    background: url(../../../img/Mechatronics.png);
     display: block;
     opacity: 1;
-    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
+}
+@media(max-width: 1650px){
+    .info{
+        position:relative;
+        transform: translate(31%,-5%);
+    }
+}
+@media(max-width: 1250px){
+    .info{
+        position:relative;
+        transform: translate(30.5%,-5%);
+    }
 }
 @media(max-width: 1050px){
     .info{
         position:relative;
-        transform: translateX(25.5%);    }
+        transform: translate(30%,-5%);}
+    }
+@media(max-width: 850px){
+    .info{
+        position:relative;
+        transform: translate(25.5%,-5%);
+}
+.info div img{
+    transform: scale(1,2);
+    
+}
+.info p{
+    font-size: 12px;
+}
 }
