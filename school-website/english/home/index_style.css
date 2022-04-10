@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(16, 102, 122);
+    background-color:  #659DBD;
 }
 .text-box{
     width:90%;
@@ -19,7 +19,8 @@ body{
     color:orange;
 }
 .enroll-background{
-    background:#e4fc0f;
+    background:yellowgreen;
+    background-image: linear-gradient(#659DBD, yellowgreen);
     height: 500px;
 }
 .enroll{
@@ -43,9 +44,17 @@ body{
         transform: scale(1.1);
     }
 }
-
+.upper-news{
+    background:#659DBD;
+    background-image: linear-gradient(yellowgreen, #659DBD);
+    margin-bottom:100px;
+}
+.upper-news h1{
+    color:rgb(34, 34, 34);
+    font-size: 60px;
+}
 .news{
-    background-color: rgb(16, 102, 122);
+    background-color: #659DBD;
 }
 .news-col{
     border:1px solid black;
@@ -79,4 +88,12 @@ body{
     width:100%;
     height:100%;
 }
-
+.news h1{
+    text-align: center;
+}
+.news hr{
+    border: 1px solid rgb(84, 84, 84);
+  border-radius: 5px;
+    width:49%;
+    transform: translate(52%);
+}

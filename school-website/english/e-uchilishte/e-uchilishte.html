@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header>
+        <header id="header">
             <row>
                 <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
                 <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
@@ -43,15 +43,39 @@
                         <span></span>
                         <div class="content">
                           <h2>E-school</h2>
-                          <p>The new tool can help students study 24 hours a day, seven days a week. This includes content available online and providing a quick response to help students. e-School helps teachers create web-based courses and websites, access course content electronically, and grant access to their students. This technology provides online quizzes, which correct the answer if it is wrong, allowing improvement for those who need help, and giving advanced students early access to upcoming materials. Enables collaboration on collaborative projects, or a document at the same time, quickly creating surveys, collecting data or managing images. Group work can be improved. You can also publish and distribute audio and video, perform online tests, display results, and more. In any case, this technology will not replace teachers any time soon. Connecting the Teacher with the Students is what makes learning more relevant.<br> "We still face students every day, but they can access information anytime, anywhere."<br> "I feel like I'm able to help more students than I ever could."</p>
-                            <h3><a href="http://euciliste.gorginaumov.edu.mk">Access to e-school</a></h3>
+                          <p>The new tool can help students study 24 hours a day, seven days a week.</p>
+                          <br>
+                          <h3>Enables:</h3>
+                          <div class="sch-row">
+                              <div class="sch-col">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                <p>Content available online</p>
+                              </div>
+                              <div class="sch-col">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                <p>Fast answers</p>
+                              </div>
+                          </div>
+                          <div class="sch-row">
+                            <div class="sch-col">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                <p>Online quizes</p>
+                                <br>
+                                <br>
+                            </div>
+                            <div class="sch-col">
+                                <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+                                <p>Tests</p>
+                            </div>
+                        </div>
+                          <button type="button"onclick="location.href='http://euciliste.gorginaumov.edu.mk'"class="custom-btn btn-6"><span><h3>Access to e-school</h3></span></button>
                         </div>
                       </div>
                     </div>
                   </div>
             </section>
         </header>
-        <button id="myBtn" ><a href=""><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
+        <button id="myBtn" ><a href="#header"><i class="fa fa-chevron-right collapse"style="transform:rotate(270deg);" aria-hidden="true"></i></a></button>
         <footer>
             
             <a href="../contact/Contact.html"> <button type="button" class="ContactButton"><span class="spanButton"></span> Contact </button> </a>

@@ -6,6 +6,9 @@
 body{
     background:#FFFF4D;
 }
+html {
+    scroll-behavior: smooth;
+  }
 header{
     min-height:100vh;
     width:100%;
