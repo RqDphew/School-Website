@@ -1,0 +1,53 @@
+.calc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    background-color: #2ecc71;
+    width: 500px;
+    height: 850px;
+    align-content: center;
+    border-radius: 30px;
+
+    
+  }
+
+  label {
+    display: inline-block;
+    width:400px;
+    text-align: left;
+}
+
+hr {
+    color:blue;
+    border: 2px solid blue;
+    border-radius: 15px;;
+}
+
+.hero-btn {
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    background: transparent;
+    font-size: 20px;
+    position: relative;
+    padding: 12px 34px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.spanButton {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
