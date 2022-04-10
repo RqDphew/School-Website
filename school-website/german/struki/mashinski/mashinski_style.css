@@ -5,7 +5,7 @@ hr{
     transform: translate(50%);
     width:50%;
     height: 2px;
-}
+} 
 .main {
     position: relative;
     margin: auto;
@@ -53,7 +53,7 @@ hr{
 .info div img{
     filter: brightness(50%);
     width:100%;
-    transform: scale(1,0.5);
+    transform: scale(1,0.6);
     transform-origin: top;
     border-radius: 10px;
     top:50px;
@@ -63,6 +63,7 @@ hr{
     height: 50%;
 }
 .info p{
+    font-size:16px;
     position:absolute;
     top: 3%;
     left: 3%;
@@ -72,6 +73,9 @@ hr{
     opacity: 1;
     animation-name: showInfo;
     animation-duration: 0.4s;
+}
+#first_block:hover + #first_info div img{
+    transform: scale(1,1);
 }
 #second_block:hover + #second_info{
     display: block;
@@ -96,11 +100,17 @@ hr{
         position:relative;
         transform: translate(31%,-5%);
     }
+    .info p{
+        font-size: 10px;
+    }
 }
 @media(max-width: 1250px){
     .info{
         position:relative;
         transform: translate(30.5%,-5%);
+    }
+    #first_block:hover + #first_info div img{
+        transform: scale(1, 2);
     }
 }
 @media(max-width: 1050px){
@@ -112,4 +122,12 @@ hr{
     .info{
         position:relative;
         transform: translate(25.5%,-5%);
-}}
+}
+.info div img{
+    transform: scale(1,2);
+    
+}
+.info p{
+    font-size: 10px;
+}
+}

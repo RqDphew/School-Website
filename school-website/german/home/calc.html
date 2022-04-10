@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="calc_style.css">
+  <script src="calc_code.js"></script>
+  <link rel="stylesheet" href="contact_style.css">
+  <link rel="stylesheet" href="../main/style.css">
+  <link rel="stylesheet" href="index_style.css">
+  </head>
+
+<body>
+<header>
+  <row>
+    <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+    <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+    <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+ </row>
+<nav>
+    <a href="index.html"><img src="../../img/tehnicko_logo.png"></a>
+</nav>
+<center>
+  <h1 style="color:white;">Geben Sie Ihre Noten ein
+    :</h1>
+  <br>
+  <a href="index.html">
+    Geh zurück</a>
+</center>
+<div class="calc">
+
+<form action="/action_page.php">
+
+  <h3>Verhalten</h3>
+  <hr>
+  <label for="Povedenie">Verhalten in der 6. Klasse:</label>
+  <input type="number" id="povedenie1" name="povedenie6to" min="1" max="5">
+<br>
+
+
+  <label for="Povedenie">Verhalten in der 7. Klasse:</label>
+  <input type="number" id="povedenie2" name="povedenie7mo" min="1" max="5">
+  <br>
+    <label for="Povedenie">Verhalten in der 8. Klasse:</label>
+  <input type="number" id="povedenie3" name="povedenie8mo" min="1" max="5">
+<br>
+
+
+  <label for="Povedenie">Verhalten in der 9. Klasse:</label>
+  <input type="number" id="povedenie4" name="povedenie9to" min="1" max="5">
+
+  <h3>Mathematik</h3>
+  <hr>
+  <label for="Matematika">Note in Mathematik in der 6. Klasse
+    :</label>
+  <input type="number" id="math1" name="math6" min="1" max="5">
+<br>
+
+
+  <label for="Matematika">Note in Mathematik in der 7. Klasse
+    :</label>
+  <input type="number" id="math2" name="math7" min="1" max="5">
+  <br>
+    <label for="Matematika">Note in Mathematik in der 8. Klasse
+      :</label>
+  <input type="number" id="math3" name="math8" min="1" max="5">
+<br>
+
+
+  <label for="Matematika">Note in Mathematik in der 9. Klasse
+    :</label>
+  <input type="number" id="math4" name="math9" min="1" max="5">
+
+  <h3>Mazedonisch
+  </h3>
+  <hr>
+    <label for="Makedonski">Bewertung in mazedonischer Sprache in der 6. Klasse:</label>
+    <input type="number" id="jazik1" name="jazik6to" min="1" max="5">
+  <br>
+  
+  
+    <label for="Makedonski">Bewertung in mazedonischer Sprache in der 7. Klasse:</label>
+    <input type="number" id="jazik2" name="jazik7mo" min="1" max="5">
+    <br>
+      <label for="Makedonski">Bewertung in mazedonischer Sprache in der 8. Klasse:</label>
+    <input type="number" id="jazik3" name="jazik8mo" min="1" max="5">
+  <br>
+  
+  
+    <label for="Makedonski">Bewertung in mazedonischer Sprache in der 9. Klasse:</label>
+    <input type="number" id="jazik4" name="jazik9to" min="1" max="5">
+
+<h3>Englisch</h3>
+<hr>
+    <label for="Angliski">Klasse in Englisch in der 6. Klasse:</label>
+    <input type="number" id="stranski1" name="stranski6to" min="1" max="5">
+  <br>
+  
+  
+  
+    <label for="Angliski">Klasse in Englisch in der 7. Klasse:</label>
+    <input type="number" id="stranski2" name="stranski7mo" min="1" max="5">
+    <br>
+      <label for="Angliski">Klasse in Englisch in der 8. Klasse:</label>
+    <input type="number" id="stranski3" name="stranski8mo" min="1" max="5">
+  <br>
+  
+  
+    <label for="Angliski">Klasse in Englisch in der 9. Klasse:</label>
+    <input type="number" id="stranski4" name="stranski9to" min="1" max="5">
+    
+    <h3>Physik</h3>
+    <hr>
+    <label for="Fizika">Note in Physik in der 8. Klasse:</label>
+  <input type="number" id="fizika1" name="fizika8mo" min="1" max="5">
+<br>
+
+  <label for="Fizika">Note in Physik in der 9. Klasse
+    :</label>
+  <input type="number" id="fizika2" name="fizika9to" min="1" max="5">
+  <br>
+  <br>
+  <center>
+  <select id="natprevar">
+    <option value="5">(I,II,III) Austragungsort eines internationalen Wettbewerbs</option>
+    <option value="3">I Ort des Landeswettbewerbs</option>
+    <option value="2">II Ort des Landeswettbewerbs</option>
+    <option value="1">III Ort des Landeswettbewerbs</option>
+    <option value="0">Ich habe in keinem Match einen Platz gewonnen</option>
+  </select>
+  <br>
+  <br>
+  <button type="button" onclick="getVal()"><span class="spanButton"></span> Punkte zeigen
+  </button>
+</center>  
+</form>
+</div>
+<center>  
+  <h1 style="color:white;" id="poeni">Einschreibepunkte:</h1>
+</center>
+
+</header>
+<script src="../main/myscripts.js"></script>
+</body>
+</html>

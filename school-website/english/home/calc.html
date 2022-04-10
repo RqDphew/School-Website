@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="calc_style.css">
+    <script src="calc_code.js"></script>
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="index_style.css">
+  </head>
+
+<body>
+<header>
+  <row>
+    <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+    <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+    <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+ </row>
+<nav>
+    <a href="index.html"><img src="../../img/tehnicko_logo.png"></a>
+</nav>
+ </row>
+<center>
+  <h1 style="color:white;">Enter your grades
+    :</h1>
+  <br>
+  <a href="index.html">Go back</a>
+</center>
+<div class="calc">
+
+<form action="/action_page.php">
+
+  <h3>Behaviour</h3>
+  <hr>
+  <label for="Povedenie">Behaviour in 6th grade:</label>
+  <input type="number" id="povedenie1" name="povedenie6to" min="1" max="5">
+<br>
+
+
+  <label for="Povedenie">Behaviour in 7th grade:</label>
+  <input type="number" id="povedenie2" name="povedenie7mo" min="1" max="5">
+  <br>
+    <label for="Povedenie">Behaviour in 8th grade:</label>
+  <input type="number" id="povedenie3" name="povedenie8mo" min="1" max="5">
+<br>
+
+
+  <label for="Povedenie">Behaviour in 9th grade:</label>
+  <input type="number" id="povedenie4" name="povedenie9to" min="1" max="5">
+
+  <h3>Maths</h3>
+  <hr>
+  <label for="Matematika">Maths grade in 6th grade:</label>
+  <input type="number" id="math1" name="math6" min="1" max="5">
+<br>
+
+
+  <label for="Matematika">Maths grade in 7th grade:</label>
+  <input type="number" id="math2" name="math7" min="1" max="5">
+  <br>
+    <label for="Matematika">Maths grade in 8th grade:</label>
+  <input type="number" id="math3" name="math8" min="1" max="5">
+<br>
+
+
+  <label for="Matematika">Maths grade in 9th grade:</label>
+  <input type="number" id="math4" name="math9" min="1" max="5">
+
+  <h3>Macedonian</h3>
+  <hr>
+    <label for="Makedonski">Macedonian grade in 6th grade:</label>
+    <input type="number" id="jazik1" name="jazik6to" min="1" max="5">
+  <br>
+  
+  
+    <label for="Makedonski">Macedonian grade in 7th grade:</label>
+    <input type="number" id="jazik2" name="jazik7mo" min="1" max="5">
+    <br>
+      <label for="Makedonski">Macedonian grade in 8th grade:</label>
+    <input type="number" id="jazik3" name="jazik8mo" min="1" max="5">
+  <br>
+  
+  
+    <label for="Makedonski">Macedonian grade in 9th grade:</label>
+    <input type="number" id="jazik4" name="jazik9to" min="1" max="5">
+
+<h3>English</h3>
+<hr>
+    <label for="Angliski">English grade in 6th grade:</label>
+    <input type="number" id="stranski1" name="stranski6to" min="1" max="5">
+  <br>
+  
+  
+  
+    <label for="Angliski">English grade in 7th grade:</label>
+    <input type="number" id="stranski2" name="stranski7mo" min="1" max="5">
+    <br>
+      <label for="Angliski">English grade in 8th grade:</label>
+    <input type="number" id="stranski3" name="stranski8mo" min="1" max="5">
+  <br>
+  
+  
+    <label for="Angliski">English grade in 9th grade:</label>
+    <input type="number" id="stranski4" name="stranski9to" min="1" max="5">
+    
+    <h3>Physics</h3>
+    <hr>
+    <label for="Fizika">Physics grade in 8th grade:</label>
+  <input type="number" id="fizika1" name="fizika8mo" min="1" max="5">
+<br>
+
+  <label for="Fizika">Physics grade in 8th grade:</label>
+  <input type="number" id="fizika2" name="fizika9to" min="1" max="5">
+  <br>
+  <br>
+  <center>
+  <select id="natprevar">
+    <option value="5">(I,II,III) place achieved on international competition</option>
+    <option value="3">I place achieved on republican competition</option>
+    <option value="2">II place achieved on republican competition</option>
+    <option value="1">III place achieved on republican competition</option>
+    <option value="0">I don't have any awards</option>
+  </select>
+  <br>
+  <br>
+  <button type="button" onclick="getVal()"><span class="spanButton"></span> Show points </button>
+</center>  
+</form>
+</div>
+<center>  
+  <h1 style="color:white;" id="poeni">Points for enrollment:</h1>
+</center>
+
+</header>
+<script src="../main/myscripts.js"></script>
+</body>
+</html>

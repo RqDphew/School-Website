@@ -47,6 +47,9 @@
     .enroll h1{
         font-size: 20px;
     }
+    .enroll h2{
+        font-size: 14px;
+    }
     .enroll .hero-btn{
         margin-top: 5%;
         width:60%;

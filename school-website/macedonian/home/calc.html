@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="calc_style.css">
-    <script src="calc_code.js"></script>
-    <link rel="stylesheet" href="contact_style.css">
+  <link rel="stylesheet" href="calc_style.css">
+  <script src="calc_code.js"></script>
+  <link rel="stylesheet" href="contact_style.css">
+  <link rel="stylesheet" href="../main/style.css">
+  <link rel="stylesheet" href="index_style.css">
   </head>
 
 <body>
-
-<h1>Внесете ги вашите отценки:</h1>
+<header>
+  <row>
+    <img style="cursor:pointer;"onclick="change('macedonian')" src="../../flags/mk.png">
+    <img style="cursor:pointer;"onclick="change('english')" src="../../flags/en.png">
+    <img style="cursor:pointer;"onclick="change('german')" src="../../flags/de.png">
+ </row>
+<nav>
+    <a href="index.html"><img src="../../img/tehnicko_logo.png"></a>
+</nav>
+<center>
+  <h1 style="color:white;">Внесете ги вашите отценки:</h1>
+  <br>
+  <a href="index.html">Врати назад</a>
+</center>
 <div class="calc">
 
 <form action="/action_page.php">
@@ -96,6 +110,7 @@
   <input type="number" id="fizika2" name="fizika9to" min="1" max="5">
   <br>
   <br>
+  <center>
   <select id="natprevar">
     <option value="5">(I,II,III) Место на меѓународен натпревар</option>
     <option value="3">I Место на државен натпревар</option>
@@ -105,11 +120,15 @@
   </select>
   <br>
   <br>
-  <button type="button" onclick="getVal()"><span class="spanButton"></span> Повеќе информации </button>
-  </form>
+  <button type="button" onclick="getVal()"><span class="spanButton"></span> Прикажи поени </button>
+</center>  
+</form>
 </div>
 <center>  
-  <h1 id="poeni">Поени за упис:</h1>
+  <h1 style="color:white;" id="poeni">Поени за упис:</h1>
 </center>
+
+</header>
+<script src="../main/myscripts.js"></script>
 </body>
 </html>
