@@ -8,15 +8,16 @@ hr{
 }
 .main {
     position: relative;
-    transform: translate(30%);
-    width:60%;
+    margin: auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 60%;
     background: rgba(112, 112, 112, 0.7);
     box-shadow: 0 3px 22px 0 rgba(31, 135, 95, 0.37);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     padding: 10px;
-    margin: 20px;
     border:0.5px solid rgb(46, 46, 46);
     transition: 0.6s;
 }
@@ -37,7 +38,7 @@ hr{
     transition: all 1s linear;
     z-index: 1;
     position:absolute;
-    transform: translate(30%,-60%);
+    transform: translateX(31.5%);
     padding: 10px;
     margin: 20px;
     width:60%;
@@ -50,9 +51,9 @@ hr{
   }
 #first_block:hover + #first_info{
     background: url(../../../img/chip_image.jpg);
-    transform: translate(30%,-30%);
     display: block;
     opacity: 1;
+    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
@@ -60,6 +61,7 @@ hr{
     background: url(../../../img/telecoms.jpeg);
     display: block;
     opacity: 1;
+    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
@@ -67,6 +69,7 @@ hr{
     background: url(../../../img/energetics.jpg);
     display: block;
     opacity: 1;
+    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
@@ -74,12 +77,12 @@ hr{
     background: url(../../../img/Mechatronics.png);
     display: block;
     opacity: 1;
+    /*transform: translateY(value);*/
     animation-name: showInfo;
     animation-duration: 0.4s;
 }
 @media(max-width: 1050px){
     .info{
         position:relative;
-        transform: translate(30%,-30%);
-    }
+        transform: translateX(25.5%);    }
 }
